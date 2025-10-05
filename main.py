@@ -152,10 +152,10 @@ if chat_message:
             # 後続の処理を中断
             st.stop()
 
-# ==========================================
-# 7-4. 会話ログへの追加
-# ==========================================
-# 表示用の会話ログにユーザーメッセージを追加
-st.session_state.messages.append({"role": "user", "content": chat_message})
-# 表示用の会話ログにAIメッセージを追加
-st.session_state.messages.append({"role": "assistant", "content": content})
+    # ==========================================
+    # 7-4. 会話ログへの追加
+    # ==========================================
+    # 表示用の会話ログにユーザーメッセージを追加
+    st.session_state.messages.append({"role": "user", "content": chat_message})
+    # 表示用の会話ログにAIメッセージを追加
+    st.session_state.messages.append({"role": "assistant", "content": content})
